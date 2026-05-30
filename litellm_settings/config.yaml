@@ -1,0 +1,20 @@
+model_list:
+  - model_name: "gpt-5.4"             # all requests where model not in your config go to this deployment
+    litellm_params:
+      model: openai/gpt-5.4           # set `openai/` to use the openai route
+      api_key: os.environ/OPENAI_API_KEY
+
+#services:
+#  litellm:
+#    volumes:
+#      - ./config.yaml:/app/config.yaml # ✅ must be uncommented
+#    command:
+#      - "--config=/app/config.yaml" # ✅ must be uncommented
+
+litellm_settings:
+  set_verbose: true
+  callbacks: ["prometheus"]
+
+general_settings:
+  master_key: sk-1234 # 🔑 your proxy admin key (must start with sk-)
+  database_url: "postgresql://llmproxy:dbpassword9090@db:5432/litellm"
