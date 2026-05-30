@@ -4,13 +4,6 @@ model_list:
       model: openai/gpt-5.4           # set `openai/` to use the openai route
       api_key: os.environ/OPENAI_API_KEY
 
-#services:
-#  litellm:
-#    volumes:
-#      - ./config.yaml:/app/config.yaml # ✅ must be uncommented
-#    command:
-#      - "--config=/app/config.yaml" # ✅ must be uncommented
-
 litellm_settings:
   set_verbose: true
   callbacks: ["prometheus"]
