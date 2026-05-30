@@ -178,7 +178,6 @@ echo 'export LITELLM_API_KEY="<LITELLM_MASTER_KEY>"' >> ~/.zshenv
 
 [litellm_settings/docker-compose-install.sh](litellm_settings/docker-compose-install.sh) is a helper script for Amazon Linux. It installs:
 
-- Docker
 - Docker Compose CLI plugin
 - Docker Buildx CLI plugin
 
