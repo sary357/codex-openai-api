@@ -45,6 +45,8 @@ LiteLLM runs with three Docker Compose services:
 
 ## LiteLLM Settings
 
+Ref: [litellm_settings/README.md](litellm_settings/README.md)
+
 The LiteLLM proxy is configured in [litellm_settings/config.yaml](litellm_settings/config.yaml).
 
 Current model mapping:
@@ -132,6 +134,8 @@ litellm:4000/metrics/
 The `bearer_token` value must match the LiteLLM master key used by the proxy.
 
 ## Codex Settings
+
+Ref: [codex_settings/README.md](codex_settings/README.md)
 
 The Codex example config is in [codex_settings/config.toml](codex_settings/config.toml).
 
