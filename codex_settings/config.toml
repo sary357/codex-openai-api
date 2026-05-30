@@ -1,0 +1,22 @@
+model = "gpt-5.4" # default setting is gpt-5.4. It should be the one of the models in the setting "model_list" of litellm config file "config.yaml".
+model_reasoning_effort = "medium"
+
+notify = ["/Users/sary357/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+
+
+######
+base_url = "http://18.183.96.192:4000/v1" # The URL of LiteLLM endpoint. In my exmaple, I put litellm on 18.183.96.192 and listen port is 4000
+model_provider = "litellm"               
+web_search = "live"
+[model_providers.litellm]
+name = "LiteLLM"
+base_url = "http://18.183.96.192:4000/v1" # The URL of LiteLLM endpoint. In my exmaple, I put litellm on 18.183.96.192 and listen port is 4000
+wire_api = "responses"
+env_key = "LITELLM_API_KEY"          
+######
+
+## Many settings in the original config.toml. please don't remove them.
+.....
+...
+..
+.
