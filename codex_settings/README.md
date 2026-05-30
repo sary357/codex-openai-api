@@ -11,6 +11,11 @@ codex_settings/
 # Set up steps
 - modify [config.toml](./config.toml). I just list necessary parts we need to modify. Please DO NOT replace your config.toml with mine. 
 ```text
+
+model = "gpt-5.4" # default setting is gpt-5.4. It should be the one "model_name" of the models in the setting "model_list" of litellm config file "config.yaml".
+...
+...
+
 base_url = "http://18.183.96.192:4000/v1" # The URL of LiteLLM endpoint. In my exmaple, I put litellm on 18.183.96.192 and listen port is 4000
 model_provider = "litellm"               
 web_search = "live"
@@ -19,6 +24,8 @@ name = "LiteLLM"
 base_url = "http://18.183.96.192:4000/v1" # The URL of LiteLLM endpoint. In my exmaple, I put litellm on 18.183.96.192 and listen port is 4000
 wire_api = "responses"
 env_key = "LITELLM_API_KEY"          
+...
+...
 ```
 
 - make sure the environment variable has `LITELLM_API_KEY`. In my case, I use master key. On Mac OS, my command is
