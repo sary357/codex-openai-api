@@ -23,8 +23,8 @@ env_key = "LITELLM_API_KEY"
 
 - make sure the environment variable has `LITELLM_API_KEY`. In my case, I use master key. On Mac OS, my command is
 ```bash
-echo "LITELLM_API_KEY=\"sk-1234\"" >> ~/.bash_rc 
-export LITELLM_API_KEY="sk-1234"
+echo "LITELLM_API_KEY=\"sk-1234\"" >> ~/.zshenv # for the sessions I launch after reboot
+export LITELLM_API_KEY="sk-1234"                # for current session
 ```
 
 - Launch VS code with codex plugin installed. Supposedly, you are about to see "LITELLM" on bottom-right side and ONLY 1 model in model list.
